@@ -53,13 +53,13 @@ class siswa extends Controller
     public function ubah()
     {
         if( $this->model('Siswa_model')->ubahDataSiswa($_POST) > 0 ) {
-            Flasher::setFlash('Berhasil', 'diubah', 'success');
-            header('Location: ' . BASE_URL . '/siswa');
-            exit;
+        Flasher::setFlash('berhasil', 'diubah', 'success');
+        header('Location: ' . BASE_URL . '/siswa');
+        exit;
         } else {
-            Flasher::setFlash('Gagal', 'diubah', 'danger');
-            header('Location: ' . BASE_URL . '/siswa');
-            exit;
+        Flasher::setFlash('gagal', 'diubah', 'danger');
+        header('Location: ' . BASE_URL . '/siswa');
+        exit;
         }
     }
 

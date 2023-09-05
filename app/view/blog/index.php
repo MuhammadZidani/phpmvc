@@ -24,13 +24,14 @@
                         <td><?= $guru['nama_guru']; ?></td>
                         <td><?= $guru['mata_pelajaran']; ?></td>
                         <td class="text-center">
-                            <a href="<?= BASE_URL; ?>/Blog/hapus/<?= $guru['id']; ?>" class="btn btn-danger m-1"
-                                onclick="return confirm('Yakin Ingin Menghapus?');">Hapus</a>
-                            <a href="<?= BASE_URL; ?>/Blog/ubah/<?= $guru['id']; ?>"
-                                class="btn btn-success m-1 tampilModalUbah" data-bs-toggle="modal"
-                                data-bs-target="#guruModal" data-id="<?= $guru['id'] ?>">Ubah</a>
-                            <a href="<?= BASE_URL; ?>/Blog/detail/<?= $guru['id']; ?>"
-                                class="btn btn-primary m-1">Detail</a>
+                            <a href="<?= BASE_URL; ?>/Blog/hapus/<?= $guru['id']; ?>" class="m-1"
+                                onclick="return confirm('Yakin Ingin Menghapus?');"><span
+                                    class="badge bg-danger">Hapus</span></a>
+                            <a href="<?= BASE_URL; ?>/Blog/ubah/<?= $guru['id']; ?>" class=" m-1 tampilModalUbah"
+                                data-bs-toggle="modal" data-bs-target="#guruModal" data-id="<?= $guru['id'] ?>"><span
+                                    class="badge bg-success">Ubah</span></a>
+                            <a href="<?= BASE_URL; ?>/Blog/detail/<?= $guru['id']; ?>" class="m-1"><span
+                                    class="badge bg-primary">Hapus</span></a>
                         </td>
                     </tr>
                 </tbody>

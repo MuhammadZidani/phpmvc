@@ -46,12 +46,11 @@ class Siswa_model
 
     public function ubahDataSiswa($data)
     {
-        $query= "UPDATE siswa SET
+        $query = "UPDATE siswa SET
         nama = :nama,
         jenis_kelamin = :jenis_kelamin,
         alamat = :alamat
         WHERE id = :id";
-
         $this->db->query($query);
         $this->db->bind('nama', $data['nama']);
         $this->db->bind('jenis_kelamin', $data['jenis_kelamin']);

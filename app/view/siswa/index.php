@@ -20,13 +20,14 @@
                         <td class="text-center"><?= $siswa['id']; ?></td>
                         <td><?= $siswa['nama']; ?></td>
                         <td class="text-center">
-                            <a href="<?= BASE_URL; ?>/siswa/hapus/<?= $siswa['id']; ?>" class="btn btn-danger m-1"
-                                onclick="return confirm('Yakin Ingin Menghapus?');">Hapus</a>
-                            <a href="<?= BASE_URL; ?>/siswa/ubah/<?= $siswa['id']; ?>"
-                                class="btn btn-success m-1 tampilModalUbah" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal" data-id="<?= $siswa['id']; ?>">Ubah</a>
-                            <a href=" <?= BASE_URL; ?>/siswa/detail/<?= $siswa['id']; ?>"
-                                class="btn btn-primary m-1">Detail</a>
+                            <a href="<?= BASE_URL; ?>/siswa/hapus/<?= $siswa['id']; ?>" class="m-1"
+                                onclick="return confirm('Yakin Ingin Menghapus?');"><span
+                                    class="badge bg-danger">Hapus</span></a>
+                            <a href="<?= BASE_URL; ?>/siswa/ubah/<?= $siswa['id']; ?>" class="m-1 tampilModalUbah"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                data-id="<?= $siswa['id']; ?>"><span class="badge bg-success">Ubah</span></a>
+                            <a href=" <?= BASE_URL; ?>/siswa/detail/<?= $siswa['id']; ?>" class=" m-1"><span
+                                    class="badge bg-primary">Detail</span></a>
                         </td>
                     </tr>
                 </tbody>
